@@ -63,7 +63,7 @@ const SubHeader = memo(function SubHeader() {
             <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
           </svg>
         </span>
-        <input className="search-input" placeholder="Search Sales by phone/name"
+        <input className="search-input" placeholder="Search Sales by phone"
           value={searchQ}
           onChange={(e) => { dispatch({ type: 'SET_SEARCH', q: e.target.value }); setShowDD(true); }}
           onFocus={() => setShowDD(true)} />
